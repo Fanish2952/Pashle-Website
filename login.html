@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Pashle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+      <div class="navbar-left">
+          <img src="assets/logo.jpg" alt="Pashle Logo" class="logo" loading="lazy">
+          <span class="brand">Pashle</span>
+      </div>
+      <nav class="navbar-right" role="navigation">
+          <a href="index.html">Home</a>
+          <a href="register.html">Register</a>
+      </nav>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <h2>Welcome back</h2>
+      <form id="login-form" autocomplete="on" novalidate>
+        <label>
+          Email
+          <input type="email" id="login-email" name="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          Password
+          <input type="password" id="login-password" name="password" required placeholder="Your password">
+        </label>
+
+        <button type="submit" class="auth-btn">Login</button>
+
+        <p class="auth-note">Don't have an account? <a href="register.html">Register here</a></p>
+      </form>
+      <div id="login-message" class="auth-message" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="footer-section">
+      <div class="footer-container">
+          <div class="footer-copy">
+              &copy; 2025 Pashle. All rights reserved.
+          </div>
+      </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

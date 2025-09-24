@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Pashle – Organic Face Tint | Natural Beauty | Aloe Vera Skincare" />
+    <meta name="description" content="Pashle offers 100% organic face tint made with aloe vera gel. Discover natural beauty, chemical-free cosmetics, and organic beauty products in India." />
+    <title>Pashle – Organic Beauty Product Website</title>
+
+    <!-- Font + theme meta -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#ff69b4">
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" href="assets/logo.jpg" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <img src="assets/logo.jpg" alt="Pashle Logo" class="logo" loading="lazy">
+            <span class="brand">Pashle</span>
+        </div>
+
+        <nav class="navbar-right" role="navigation" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#shop">Shop</a>
+            <a href="#cart">Cart</a>
+
+            <!-- Auth area: JS will populate this element -->
+            <div id="auth-area" class="auth-area">
+                <a href="login.html" id="login-link">Login/Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Welcome to Pashle</h1>
+                <p>
+                    Discover your natural beauty with our 100% organic face tint made from pure aloe vera gel. Chemical-free, safe, and designed for glowing skin.
+                </p>
+                <ul class="seo-keywords">
+                    <li>organic face tint</li>
+                    <li>natural beauty</li>
+                    <li>aloe vera skincare</li>
+                    <li>chemical-free cosmetics</li>
+                    <li>organic beauty products in India</li>
+                </ul>
+            </div>
+            <div class="home-image">
+                <img src="assets/Home3.png" alt="Pashle Organic Face Tint" class="product-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>
+                    Pashle was born from a passion for pure, organic beauty. We believe in safe, natural skincare that celebrates every individual. Our face tint is crafted with aloe vera gel and botanical ingredients, free from chemicals and cruelty.
+                </p>
+                <ul class="about-values">
+                    <li>100% Organic Ingredients</li>
+                    <li>Safe for All Skin Types</li>
+                    <li>Eco-Friendly & Cruelty-Free</li>
+                    <li>Made in India</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="assets/About.png" alt="Pashle Brand Story" class="about-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section" aria-label="Customer testimonials">
+        <div class="testimonials-container">
+            <h2>Testimonials</h2>
+            <div class="carousel" role="region" aria-label="Testimonials carousel">
+                <button class="carousel-arrow left" aria-label="Previous testimonial">&#10094;</button>
+                <div class="carousel-track">
+                    <div class="testimonial-card active">
+                        <p>"Pashle's face tint is a game changer! My skin feels fresh and looks naturally radiant."</p>
+                        <span>- Ananya S.</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Finally, a product that's truly organic and gentle. I love the glow!"</p>
+                        <span>- Priya M.</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"The aloe vera base is perfect for my sensitive skin. Highly recommend!"</p>
+                        <span>- Riya K.</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Stylish packaging and amazing results. Pashle is my new favorite!"</p>
+                        <span>- Simran T.</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Unisex, organic, and effective. My whole family uses it!"</p>
+                        <span>- Aman J.</span>
+                    </div>
+                </div>
+                <button class="carousel-arrow right" aria-label="Next testimonial">&#10095;</button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop -->
+    <section id="shop" class="shop-section">
+        <div class="shop-container">
+            <h2>Shop</h2>
+            <div class="shop-products">
+                <div class="product-card" data-product-index="0">
+                    <img src="assets/Shop1.png" alt="Pashle Aloe Vera Face Tint" class="shop-img" loading="lazy">
+                    <h3>Pashle Aloe Vera Face Tint</h3>
+                    <ul class="product-features">
+                        <li>100% Organic Aloe Vera Gel</li>
+                        <li>Natural Tint for All Skin Types</li>
+                        <li>Chemical-Free & Cruelty-Free</li>
+                    </ul>
+                    <div class="product-price">₹499</div>
+                    <button class="shop-btn add-cart">Add to Cart</button>
+                    <button class="shop-btn buy-now">Buy Now</button>
+                </div>
+
+                <div class="product-card" data-product-index="1">
+                    <img src="assets/Shop2.png" alt="Pashle Rose Glow Tint" class="shop-img" loading="lazy">
+                    <h3>Pashle Rose Glow Tint</h3>
+                    <ul class="product-features">
+                        <li>Infused with Rose Extracts</li>
+                        <li>Gives a Natural Pink Glow</li>
+                        <li>Suitable for Sensitive Skin</li>
+                    </ul>
+                    <div class="product-price">₹549</div>
+                    <button class="shop-btn add-cart">Add to Cart</button>
+                    <button class="shop-btn buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart -->
+    <section id="cart" class="cart-section">
+        <div class="cart-container">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items dynamically added -->
+            </div>
+            <div class="cart-actions">
+                <button class="cart-btn checkout">Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="https://formspree.io/f/mkgqwzbr" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="hidden" name="_subject" value="New Contact Form Submission from Pashle Website">
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+            <div class="contact-social">
+                <a href="https://www.facebook.com/pashlebeauty/" target="_blank" rel="noopener noreferrer" class="social-icon"><img src="assets/facebook-color.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/pashlebeauty" target="_blank" rel="noopener noreferrer" class="social-icon"><img src="assets/instagram-color.png" alt="Instagram"></a>
+                <a href="https://wa.me/917740066460" target="_blank" rel="noopener noreferrer" class="social-icon"><img src="assets/whatsapp-color.png" alt="WhatsApp"></a>
+            </div>
+            <div class="contact-email">
+                <span>Email: <a href="mailto:fanishpandey2952@gmail.com">fanishpandey2952@gmail.com</a></span>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#shop">Shop</a>
+                <a href="#cart">Cart</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/pashlebeauty/" target="_blank" rel="noopener noreferrer" class="social-icon"><img src="assets/facebook-color.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/pashlebeauty" target="_blank" rel="noopener noreferrer" class="social-icon"><img src="assets/instagram-color.png" alt="Instagram"></a>
+                <a href="https://wa.me/917740066460" target="_blank" rel="noopener noreferrer" class="social-icon"><img src="assets/whatsapp-color.png" alt="WhatsApp"></a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2025 Pashle. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+
+  <script>
+  document.querySelectorAll('.buy-now').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const card = btn.closest('.product-card');
+      if (!card) return;
+
+      const name = card.querySelector('h3').innerText.trim();
+      const priceText = card.querySelector('.product-price').innerText.replace(/[₹, ]/g,'');
+      const price = Number(priceText);
+      const img = card.querySelector('img').src;
+
+      // Get existing cart or empty array
+      let cart = JSON.parse(localStorage.getItem('pashleCart')) || [];
+
+      // Add this product
+      cart.push({ 
+        name, 
+        price, 
+        img, 
+        priceFormatted: card.querySelector('.product-price').innerText.trim() 
+      });
+
+      localStorage.setItem('pashleCart', JSON.stringify(cart));
+
+      // Instead of redirect, trigger checkout alert (same as checkout button in main.js)
+      const total = cart.reduce((a,b) => a + b.price, 0);
+      alert("⚠️ Oops! Our servers are overloaded due to high demand.\n\n" +
+      "Due to this inconvenience, we’re offering a special discount on shipping charges if you order directly through:\n\n" +
+      "📱 WhatsApp 📸 Instagram 📧 Email options in contact \n\n"+
+      "You can also directly send us message through contact option "+
+      "🙏 Sorry for the trouble & thank you for your support!");
+    });
+  });
+</script>
+</body>
+</html>
