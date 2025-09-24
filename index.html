@@ -21,19 +21,99 @@
             <span class="brand">Pashle</span>
         </div>
 
-        <nav class="navbar-right" role="navigation" aria-label="Main navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#shop">Shop</a>
-            <a href="#cart">Cart</a>
+         <nav class="navbar-right" role="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#shop">Shop</a>
+        <a href="#cart">Cart</a>
 
-            <!-- Auth area: JS will populate this element -->
-            <div id="auth-area" class="auth-area">
-                <a href="login.html" id="login-link">Login/Register</a>
-            </div>
-        </nav>
-    </header>
+        <!-- Auth area: JS will populate this element -->
+        <div id="auth-area" class="auth-area">
+            <a href="login.html" id="login-link">Login/Register</a>
+        </div>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+</header>
+
+<!-- CSS -->
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
+.navbar-right a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  left: 1rem; /* move to left */
+  top: 1rem;
+  z-index: 1000; /* make sure it's above menu */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-right {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 220px;
+    background-color: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+  .navbar-right a {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  .hamburger {
+    display: block;
+    color: #fff;
+  }
+  .navbar-right.active {
+    right: 0;
+  }
+}
+</style>
+
+<!-- JS -->
+<script>
+const hamburger = document.getElementById('hamburger');
+const navbarMenu = document.querySelector('.navbar-right');
+
+hamburger.addEventListener('click', () => {
+  navbarMenu.classList.toggle('active');
+});
+</script>
 
     <main>
     <!-- Home Section -->
